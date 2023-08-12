@@ -1,6 +1,6 @@
 # Teste Frontend - Corebiz
 
-Foobar is a Python library for dealing with word pluralization.
+Test for frontend developer vacancy
 
 ## To clone
 
