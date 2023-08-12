@@ -28,7 +28,7 @@ function Shelf() {
           draggable
           hasArrows
           slidesToShow={4}
-          slidesToScroll={1}
+          slidesToScroll={4}
           itemWidth={216}
         >
           {products.map((item: IProduct) => {

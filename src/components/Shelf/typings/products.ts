@@ -1,7 +1,11 @@
 export interface IProduct {
   image: string;
   title: string;
-  rating: object;
+  rating: IRating;
   price: number;
   id: number;
+}
+
+interface IRating {
+  rate: number;
 }
