@@ -1,7 +1,63 @@
 .shelf {
+  background: #fff;
+  padding: 1.5625rem 0 4.3125rem;
+
+  &__wrapper {
+    max-width: 65rem;
+    margin: 0 auto;
+
+    h2 {
+      color: #000;
+      font-size: 1.25rem;
+      font-weight: 900;
+      margin: 0 0 1.625rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 4.0625rem;
+        height: 0.3125rem;
+        background: #c0c0c0;
+        position: absolute;
+        left: 0;
+        bottom: -0.75rem;
+      }
+    }
+  }
   &__product {
-    img {
+    text-align: center;
+    height: 22.0625rem !important;
+
+    &-image {
+      max-height: 15.625rem;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 50%;
+      }
+    }
+
+    &-name {
       width: 13.5rem;
+      text-align: center;
+      color: #7a7a7a;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin: 0 auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-price {
+      color: #000;
+      font-size: 1.125rem;
+      font-weight: 700;
+      width: 11.25rem;
+      margin: 0 auto;
     }
   }
 }
