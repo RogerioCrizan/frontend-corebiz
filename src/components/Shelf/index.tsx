@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Product from "./components/Product";
 import { IProduct } from "./typings/products";
 import Glider from "react-glider";

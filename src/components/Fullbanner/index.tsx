@@ -1,3 +1,5 @@
+import React from "react";
+
 import Glider from "react-glider";
 import banners from "./static/banners.json";
 import bannersMobile from "./static/banners-mobile.json";

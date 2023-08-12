@@ -1,3 +1,5 @@
+import React from "react";
+
 function SearchInput() {
   return (
     <div className="header__searchInput">

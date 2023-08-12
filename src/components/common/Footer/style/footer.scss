@@ -107,6 +107,11 @@
           font-weight: 400;
           font-size: 0.625rem;
           color: #fff;
+          transition: ease-in-out 0.1s;
+
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
     }

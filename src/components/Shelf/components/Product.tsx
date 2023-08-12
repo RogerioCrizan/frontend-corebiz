@@ -1,3 +1,5 @@
+import React from "react";
+
 import type { IProduct } from "../typings/products";
 import Box from "@mui/material/Box";
 import StarIcon from "@mui/icons-material/Star";

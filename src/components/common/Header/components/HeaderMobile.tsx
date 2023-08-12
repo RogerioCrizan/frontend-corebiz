@@ -1,3 +1,5 @@
+import React from "react";
+
 import Menu from "./Menu";
 import Logo from "../components/Logo";
 import Minicart from "../components/Minicart";

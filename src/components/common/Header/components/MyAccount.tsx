@@ -1,3 +1,5 @@
+import React from "react";
+
 function MyAccount() {
   return (
     <div className="header__myAccount">

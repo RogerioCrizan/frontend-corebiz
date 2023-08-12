@@ -1,6 +1,9 @@
+import React from "react";
+
 function Logo() {
   return (
     <div className="header__logo">
+      <a href="https://www.corebiz.ag/pt/">
       <svg
         width="181"
         height="41"
@@ -41,6 +44,8 @@ function Logo() {
           fill="#BFBFBF"
         />
       </svg>
+      </a>
+
     </div>
   );
 }

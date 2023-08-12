@@ -1,3 +1,5 @@
+import React from "react";
+
 import Logo from "../components/Logo";
 import SearchInput from "../components/SearchInput";
 import MyAccount from "../components/MyAccount";

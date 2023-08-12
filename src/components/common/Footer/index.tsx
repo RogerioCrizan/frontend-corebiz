@@ -1,3 +1,5 @@
+import React from "react";
+
 import Address from "./components/address";
 import Contacts from "./components/Contacts";
 import Copyright from "./components/Copyright";
