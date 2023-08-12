@@ -5,7 +5,7 @@ function Copyright() {
     <div className="footer__copyright">
       <ul>
         <li>
-          <a href="https://www.corebiz.ag/pt/">
+          <a href="https://www.corebiz.ag/pt/" target="_blank">
             Created by
             <svg
               width="76"
@@ -50,7 +50,7 @@ function Copyright() {
           </a>
         </li>
         <li>
-          <a href="https://vtex.com/br-pt/overview-plataforma/">
+          <a href="https://vtex.com/br-pt/overview-plataforma/" target="_blank">
             Powered by
             <svg
               width="53"
