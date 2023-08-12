@@ -11,7 +11,7 @@ function Newsletter() {
   const nameInput = document.querySelectorAll(".newsletter__form-name");
   const emailInput = document.querySelectorAll(".newsletter__form-email");
 
-  const handleName = (e: any) => {
+  const handleName = (e) => {
     nameInput?.forEach((input: Element) => {
       input.classList["remove"]("newsletter__form-invalid");
     });
@@ -19,7 +19,7 @@ function Newsletter() {
     setName(e.target.value);
   };
 
-  const handleEmail = (e: any) => {
+  const handleEmail = (e) => {
     emailInput?.forEach((input: Element) => {
       input.classList["remove"]("newsletter__form-invalid");
     });

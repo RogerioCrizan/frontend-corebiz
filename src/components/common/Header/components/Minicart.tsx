@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useMinicart } from "../../../../hooks/useMinicart";
 
 function Minicart() {
   const [quantity, setQuantity] = useState(0);
+  const { minicart } = useMinicart();
+
+  useEffect(() => {
+    setQuantity(minicart.productId.length);
+  }, [minicart]);
 
   return (
     <div className="header__minicart">

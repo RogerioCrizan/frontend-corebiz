@@ -1,5 +1,6 @@
 import React from "react";
 
+import { UseMinicartProvider } from "./hooks/useMinicart";
 import Header from "./components/common/Header";
 import Fullbanner from "./components/Fullbanner";
 import Shelf from "./components/Shelf";
@@ -10,13 +11,13 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <>
+    <UseMinicartProvider>
       <Header />
       <Fullbanner />
       <Shelf />
       <Newsletter />
       <Footer />
-    </>
+    </UseMinicartProvider>
   );
 }
 
