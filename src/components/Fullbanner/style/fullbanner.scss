@@ -1,0 +1,17 @@
+.fullbanner {
+  .glider-dots {
+    position: absolute;
+    bottom: 2.3125rem;
+    left: 50%;
+    transform: translate(-50%);
+
+    .glider-dot {
+      background: #bdbdbd;
+      outline: none;
+
+      &.active {
+        background: #f8475f;
+      }
+    }
+  }
+}

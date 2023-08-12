@@ -1,3 +1,5 @@
+@import "../../../sass/media-queries";
+
 .shelf {
   background: #fff;
   padding: 1.5625rem 0 4.3125rem;
@@ -124,6 +126,50 @@
         button {
           opacity: 1;
           visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .shelf {
+    padding: 1rem 1.25rem;
+
+    &__wrapper {
+      text-align: center;
+
+      h2 {
+        text-align: left;
+
+        &::after {
+          width: 2.125rem;
+        }
+      }
+
+      .glider {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      .glider-dot {
+        background: #bdbdbd;
+        outline: none;
+
+        &.active {
+          background: #f8475f;
+        }
+      }
+    }
+
+    &__product {
+      margin: 0;
+
+      &-info {
+        button {
+          visibility: visible;
+          opacity: 1;
+          width: 8.75rem;
         }
       }
     }

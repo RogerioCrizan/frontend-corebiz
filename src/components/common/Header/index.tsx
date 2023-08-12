@@ -1,23 +1,10 @@
-import Logo from "./components/Logo";
-import SearchInput from "./components/SearchInput";
-import MyAccount from "./components/MyAccount";
-import Minicart from "./components/Minicart";
+import HeaderMobile from "./components/HeaderMobile";
+import HeaderDesktop from "./components/HeaderDesktop";
 
 import "./styles/header.scss";
 
 function Header() {
-  return (
-    <>
-      <header className="header">
-        <div className="header__wrapper">
-          <Logo />
-          <SearchInput />
-          <MyAccount />
-          <Minicart />
-        </div>
-      </header>
-    </>
-  );
+  return <>{window.outerWidth < 959 ? <HeaderMobile /> : <HeaderDesktop />}</>;
 }
 
 export default Header;

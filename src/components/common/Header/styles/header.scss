@@ -1,3 +1,4 @@
+@import "../../../../sass/media-queries";
 .header {
   background: #fff;
 
@@ -15,6 +16,7 @@
     align-items: center;
     width: 44.875rem;
     border-bottom: 1px solid #7a7a7a;
+    padding-bottom: 0.25rem;
 
     input {
       width: 100%;
@@ -71,6 +73,25 @@
         font-weight: 700;
         margin-left: 0.3125rem;
       }
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    padding: 7px 20px 12px;
+
+    &__logo {
+      svg {
+        width: 6.8125rem;
+      }
+    }
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__searchInput {
+      width: auto;
     }
   }
 }
