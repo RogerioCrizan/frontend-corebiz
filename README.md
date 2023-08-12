@@ -1,8 +1,35 @@
-# React + Vite
+# Teste Frontend - Corebiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Foobar is a Python library for dealing with word pluralization.
 
-Currently, two official plugins are available:
+## To clone
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone this repository into your desktop:
+
+```bash
+git clone https://github.com/RogerioCrizan/frontend-corebiz.git
+```
+
+## Usage
+
+Follow this steps to run the application:
+
+First:
+
+```bash
+yarn
+```
+
+After installing the dependencies:
+
+```bash
+yarn run dev
+```
+
+Finally, in the terminal you will get a link to your localhost.
+
+## Technologies used
+
+- Boilerplate Vite;
+- React + Typescript;
+- Sass with sass-loader Webpack to compile;
