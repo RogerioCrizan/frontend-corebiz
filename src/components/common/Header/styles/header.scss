@@ -1,0 +1,76 @@
+.header {
+  background: #fff;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    justify-content: space-between;
+  }
+
+  &__searchInput {
+    display: flex;
+    align-items: center;
+    width: 44.875rem;
+    border-bottom: 1px solid #7a7a7a;
+
+    input {
+      width: 100%;
+      color: #7a7a7a;
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 0.8125rem;
+      font-weight: 400;
+    }
+
+    svg {
+      padding-bottom: 0.3125rem;
+      cursor: pointer;
+      transition: ease-in-out 0.1s;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__myAccount {
+    display: flex;
+    cursor: pointer;
+
+    svg {
+      padding-right: 0.3125rem;
+    }
+
+    span {
+      color: #7a7a7a;
+      font-size: 0.8125rem;
+      font-weight: 400;
+    }
+  }
+
+  &__minicart {
+    cursor: pointer;
+
+    &-button {
+      border: none;
+      background: transparent;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      outline: none !important;
+
+      span {
+        background: #f8475f;
+        padding: 0 4px;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 700;
+        margin-left: 0.3125rem;
+      }
+    }
+  }
+}
