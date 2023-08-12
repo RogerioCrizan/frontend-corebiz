@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useMinicart } from "../../../../hooks/useMinicart";
 
 function Minicart() {
-  const [quantity, setQuantity] = useState(0);
+  // const [quantity, setQuantity] = useState(0);
   const { minicart } = useMinicart();
 
-  useEffect(() => {
-    setQuantity(minicart.productId.length);
-  }, [minicart]);
+  // useEffect(() => {
+  //   setQuantity(minicart.productId.length);
+  // }, [minicart]);
 
   return (
     <div className="header__minicart">
@@ -31,7 +31,7 @@ function Minicart() {
             </clipPath>
           </defs>
         </svg>
-        <span>{quantity}</span>
+        <span>{minicart.quantity}</span>
       </button>
     </div>
   );

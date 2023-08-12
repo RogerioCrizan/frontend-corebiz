@@ -36,8 +36,8 @@ function Product({ image, title, rating, price, id }: IProduct) {
   }, [minicart]);
 
   const addToCart = () => {
-    setMinicart({ productId: [...minicart.productId, { id: id }] });
-    setAdded(true);
+    setMinicart({ productId: [...minicart.productId, { id: id }], quantity: minicart.productId.length + 1 });
+    setAdded(true); 
   };
 
   const removeToCart = () => {
@@ -45,8 +45,9 @@ function Product({ image, title, rating, price, id }: IProduct) {
       return item.id !== id;
     });
 
-    setMinicart({ productId: itemRemoved });
+    setMinicart({ productId: itemRemoved, quantity: minicart.productId.length - 1});
     setAdded(false);
+
   };
 
   return (

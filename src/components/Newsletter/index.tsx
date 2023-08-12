@@ -11,7 +11,7 @@ function Newsletter() {
   const nameInput = document.querySelectorAll(".newsletter__form-name");
   const emailInput = document.querySelectorAll(".newsletter__form-email");
 
-  const handleName = (e) => {
+  const handleName = (e: React.ChangeEvent<HTMLInputElement>) => {
     nameInput?.forEach((input: Element) => {
       input.classList["remove"]("newsletter__form-invalid");
     });
@@ -19,14 +19,14 @@ function Newsletter() {
     setName(e.target.value);
   };
 
-  const handleEmail = (e) => {
+  const handleEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
     emailInput?.forEach((input: Element) => {
       input.classList["remove"]("newsletter__form-invalid");
     });
     setEmail(e.target.value);
   };
 
-  const sendNewsletter = (e) => {
+  const sendNewsletter = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (name === "" && !email.includes("@")) {
@@ -79,7 +79,8 @@ function Newsletter() {
         <form
           className={`newsletter__form ${
             !active ? "newsletter__formDisabled" : ""
-          }`}
+         }`}
+         onSubmit={sendNewsletter}
         >
           <h2>Participe de nossas news com promoções e novidades!</h2>
 
@@ -109,7 +110,6 @@ function Newsletter() {
             </div>
 
             <button
-              onClick={sendNewsletter}
               className={`${loading ? `loading` : ``}`}
             >
               Eu quero!

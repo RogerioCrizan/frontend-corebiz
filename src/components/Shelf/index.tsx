@@ -6,7 +6,6 @@ import "glider-js/glider.min.css";
 import ContentLoader from "react-content-loader";
 
 import "./styles/shelf.scss";
-import { useMinicart } from "../../hooks/useMinicart";
 
 function Shelf() {
   const [products, setProducts] = useState([]);
@@ -61,7 +60,6 @@ function Shelf() {
           </Glider>
         ) : (
           <Glider
-            draggable
             hasArrows
             slidesToShow={4}
             slidesToScroll={4}

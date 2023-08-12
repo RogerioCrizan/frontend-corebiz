@@ -7,6 +7,7 @@ export interface IUseMinicart {
 
 export interface IMinicart {
   productId: ProductMinicart[];
+  quantity: number
 }
 
 interface ProductMinicart {

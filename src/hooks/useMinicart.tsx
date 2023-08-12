@@ -3,6 +3,7 @@ import { IMinicart, IUseMinicart } from "../typings/useMinicart";
 
 const initialValue = {
   productId: [],
+  quantity: 0
 };
 
 const UseMinicartContext = React.createContext<IUseMinicart>(
