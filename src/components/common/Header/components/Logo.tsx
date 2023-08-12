@@ -3,7 +3,7 @@ import React from "react";
 function Logo() {
   return (
     <div className="header__logo">
-      <a href="https://www.corebiz.ag/pt/">
+      <a href="https://www.corebiz.ag/pt/" target="_blank">
       <svg
         width="181"
         height="41"
