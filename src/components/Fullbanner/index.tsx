@@ -11,11 +11,11 @@ function Fullbanner() {
     <section className="fullbanner">
       <Glider draggable hasDots slidesToShow={1} slidesToScroll={1}>
         {window.outerWidth < 959
-          ? bannersMobile.map((item) => {
-              return <img src={item.path} />;
+          ? bannersMobile.map((item, index) => {
+              return <img key={index} src={item.path} />;
             })
-          : banners.map((item) => {
-              return <img src={item.path} />;
+          : banners.map((item, index) => {
+              return <img key={index} src={item.path} />;
             })}
       </Glider>
     </section>

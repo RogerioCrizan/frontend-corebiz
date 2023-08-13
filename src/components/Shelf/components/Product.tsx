@@ -36,8 +36,11 @@ function Product({ image, title, rating, price, id }: IProduct) {
   }, [minicart]);
 
   const addToCart = () => {
-    setMinicart({ productId: [...minicart.productId, { id: id }], quantity: minicart.productId.length + 1 });
-    setAdded(true); 
+    setMinicart({
+      productId: [...minicart.productId, { id: id }],
+      quantity: minicart.productId.length + 1,
+    });
+    setAdded(true);
   };
 
   const removeToCart = () => {
@@ -45,9 +48,11 @@ function Product({ image, title, rating, price, id }: IProduct) {
       return item.id !== id;
     });
 
-    setMinicart({ productId: itemRemoved, quantity: minicart.productId.length - 1});
+    setMinicart({
+      productId: itemRemoved,
+      quantity: minicart.productId.length - 1,
+    });
     setAdded(false);
-
   };
 
   return (
@@ -60,7 +65,11 @@ function Product({ image, title, rating, price, id }: IProduct) {
           <p className="shelf__product-name">{title}</p>
           <Box className="shelf__product-rating">
             {[...new Array(totalStars)].map((arr, index) => {
-              return index < activeStars ? <StarIcon /> : <StarBorderIcon />;
+              return index < activeStars ? (
+                <StarIcon key={index} />
+              ) : (
+                <StarBorderIcon key={index} />
+              );
             })}
           </Box>
         </div>

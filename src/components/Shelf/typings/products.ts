@@ -4,6 +4,7 @@ export interface IProduct {
   rating: IRating;
   price: number;
   id: number;
+  key: React.Key;
 }
 
 interface IRating {

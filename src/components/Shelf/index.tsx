@@ -46,7 +46,7 @@ function Shelf() {
             slidesToScroll={2}
             itemWidth={140}
           >
-            {products.map((item: IProduct) => {
+            {products.map((item: IProduct, index) => {
               return (
                 <Product
                   image={item.image}
@@ -54,18 +54,14 @@ function Shelf() {
                   rating={item.rating}
                   price={item.price}
                   id={item.id}
+                  key={index}
                 />
               );
             })}
           </Glider>
         ) : (
-          <Glider
-            hasArrows
-            slidesToShow={4}
-            slidesToScroll={4}
-            itemWidth={216}
-          >
-            {products.map((item: IProduct) => {
+          <Glider hasArrows slidesToShow={4} slidesToScroll={4} itemWidth={216}>
+            {products.map((item: IProduct, index) => {
               return (
                 <Product
                   image={item.image}
@@ -73,6 +69,7 @@ function Shelf() {
                   rating={item.rating}
                   price={item.price}
                   id={item.id}
+                  key={index}
                 />
               );
             })}
