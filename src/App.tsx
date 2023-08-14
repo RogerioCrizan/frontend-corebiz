@@ -13,9 +13,11 @@ function App() {
   return (
     <UseMinicartProvider>
       <Header />
-      <Fullbanner />
-      <Shelf />
-      <Newsletter />
+      <main>
+        <Fullbanner />
+        <Shelf />
+        <Newsletter />
+      </main>
       <Footer />
     </UseMinicartProvider>
   );
