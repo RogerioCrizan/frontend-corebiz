@@ -1,7 +1,5 @@
 # Teste Frontend - Corebiz
 
-Test for frontend developer vacancy!
-
 ## To visit the website
 
 Visit: https://rogeriocrizan.github.io/frontend-corebiz/
